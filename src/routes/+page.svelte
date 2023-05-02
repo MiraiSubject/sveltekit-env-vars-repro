@@ -10,8 +10,9 @@
 </svelte:head>
 
 <section>
-  {#each Object.keys(data.env) as key}
-	<p>{key}</p>
+  {#each Object.entries(data.env) as key}
+	<p>{key[0]}</p>
+	<p>{key[1]}</p>
   {/each}
 </section>
 

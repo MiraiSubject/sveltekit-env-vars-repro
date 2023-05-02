@@ -14,7 +14,13 @@ const config = {
 		adapter: adapter({
 			runtime: 'edge',
 			envVarsInUse: [
-				'DATABASE_URL'
+				'DATABASE_URL',
+				'GITHUB_CLIENT_ID',
+				'GITHUB_CLIENT_SECRET',
+				'GITHUB_CALLBACK_URL',
+				'GITHUB_CALLBACK_URL_DEV',
+				'GITHUB_CALLBACK_URL_PROD',
+				'GITHUB_CALLBACK_URL_PREVIEW',
 			]
 		})
 	}
