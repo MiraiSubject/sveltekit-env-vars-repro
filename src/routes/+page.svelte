@@ -16,6 +16,13 @@
   {/each}
 </section>
 
+<section>
+  {#each Object.entries(data.pubEnv) as key}
+	<p>{key[0]}</p>
+	<p>{key[1]}</p>
+  {/each}
+</section>
+
 <style>
   section {
     display: flex;
